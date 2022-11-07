@@ -12,3 +12,6 @@ How to Receive Data:
 
 Once the new price has been calculated it will be written onto the file receive.txt along with the current rarity value. This time it will have the 'R' prefix to indicate it was sent. An 'E' prefix will be used to indicate if there was an error in processing the requested data along with an explanatory text to indicate why there was an error. Meanwhile, when the calculateNewPrice() function was called, after data was sent, a while loop was activated thats is reading the recieve.txt file awaiting the arrival of text. When Text is detected it is then parsed and if correct the new price is printed to the console. The receive.txt file is then cleared and the while loop is broken ending the function.
 
+<img width="504" alt="image" src="https://user-images.githubusercontent.com/62769317/200349314-539e087c-649c-4032-87c5-88dd911b7f07.png">
+
+
