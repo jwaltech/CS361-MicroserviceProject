@@ -6,5 +6,9 @@ This is a Microservice that adjusts the price of a collectible card, whenver its
 
 How to Request Data:
 
-In the main.py file, there is a function calculateNewPrice(num, cuRarity,newRarity) that takes as its parameters: the current price of the card, the current 'rarity value', and the new  'rarity' value the user wants to change the card to. When the function is called it writes to a text file called send.txt these values, separated by commas and prefixed the character 'S' to indicate that the message is being sent. Meanwhile in the rarity.py file, a while loop is currently running
+In the main.py file, there is a function calculateNewPrice(num, cuRarity,newRarity) that takes as its parameters: the current price of the card, the current 'rarity value', and the new  'rarity' value the user wants to change the card to. When the function is called it writes to a text file called send.txt these values, separated by commas and prefixed the character 'S' to indicate that the message is being sent. Meanwhile in the rarity.py file, a while loop is currently running that opens and reads the send.txt file. If the 'S' character is detected then the comma separated text will be parsed into function parameters to calculate the new price. Once the parameters are received. the send.txt file is then cleared on information to allow future instructionstions to be written and to notread the same data twice.
+
+How to Receive Data:
+
+Once the new price has been calculated it will be written onto
 
